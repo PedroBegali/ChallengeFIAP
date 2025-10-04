@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+/* HEADER */
+header {
+    background: #8CBF3F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.nomeOng {
+    background: #CDE68A;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    padding: 40px;
+}
+
+/* FOOTER */
+footer {
+    background: #8CBF3F;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
