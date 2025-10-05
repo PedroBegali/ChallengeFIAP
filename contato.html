@@ -21,21 +21,27 @@
     <main>
         <h1>Fale Conosco</h1>
         <form>
-            <label>Nome:</label><br>
-            <input type="text" name="nome" required><br><br>
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" name="nome" id="nome" required><br><br>
+            
+            <label for="txtData">Data de Nascimento: </label><br>
+            <input type="date" name="dataNascimento" id="dataNascimento" required><br><br>
 
-            <label>Email:</label><br>
-            <input type="email" name="email" required><br><br>
+            <label for="txtTel">Telefone:</label><br>
+            <input type="tel" name="txtTel" id="txtTel"><br><br>
 
-            <label>Mensagem:</label><br>
-            <textarea name="mensagem" rows="5" required></textarea><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" rows="5" id="mensagem" required></textarea><br><br>
 
             <button type="submit">Enviar</button>
         </form>
     </main>
 
     <footer>
-        Challenge Turma do bem - 1TDSPA (Pedro B., Lucas D., Pedro H.R.)
+        Challenge Turma do bem - 1TDSPA (Pedro B., Lucas D.)
     </footer>
 </body>
 </html>
