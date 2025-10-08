@@ -81,9 +81,19 @@ footer {
 .pessoasDaOng{
     float: right;
 }
+.fotoPedroH{
+    float: left;
+    margin-right: 15px;
+    margin-left: 50px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 .fotoPedro{
     float: left;
     margin-right: 15px;
+    margin-left: 100px;
     object-fit: cover;
     width: 150px;
     height: 150px;
