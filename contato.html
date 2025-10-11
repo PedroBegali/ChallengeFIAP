@@ -8,9 +8,8 @@
 </head>
 <body>
     <header>
-        <div class="nomeOng">Challenge-Turma do Bem</div>
+        <div class="nomeOng"> <a href="index.html">Challenge-Turma do Bem</a></div>
         <nav>
-            <a href="index.html">Página Incial</a>
             <a href="quem_somos.html">Quem Somos</a>
             <a href="sobre_o_projeto.html">Sobre o projeto</a>
             <a href="FAQ.html">FAQ</a>
@@ -18,26 +17,27 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contato">
         <h1>Fale Conosco</h1>
-        <form>
+        <form class="formulario">
             <label for="nome">Nome completo:</label><br>
-            <input type="text" name="nome" id="nome" required><br><br>
-            
-            <label for="txtData">Data de Nascimento: </label><br>
-            <input type="date" name="dataNascimento" id="dataNascimento" required><br><br>
+            <textarea type="text" name="nome" rows="1" cols="30" id="nome" required></textarea><br><br>
+
+            <label for="email">Email:</label><br>
+            <textarea type="email" name="email" rows="1" cols="30" id="email" required></textarea><br><br>
 
             <label for="txtTel">Telefone:</label><br>
             <input type="tel" name="txtTel" id="txtTel"><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email" required><br><br>
+            
+            <label for="txtData">Data de Nascimento: </label><br>
+            <input type="date" name="dataNascimento" id="dataNascimento" required><br><br>
 
             <label for="mensagem">Mensagem:</label><br>
             <textarea name="mensagem" rows="5" id="mensagem" required></textarea><br><br>
 
             <button type="submit">Enviar</button>
         </form>
+        
     </main>
 
     <footer>
