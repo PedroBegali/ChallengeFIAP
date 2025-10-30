@@ -1,0 +1,258 @@
+/*___________GERAL_____________*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+main {
+    padding: 40px;
+}
+header {
+    background: #FEA405;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.nomeOng a{
+    text-decoration: none;
+    color: black;
+}
+.nomeOng {
+    background: #8CBF3F;
+    color: black;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #8CBF3F;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+/*___________GERAL_____________*/
+
+/*___________INDEX_____________*/
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+}
+.texto {
+    max-width: 500px;
+}
+.texto h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #FEA405;
+    margin: 0 0 25px 0;
+}
+.texto p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/*___________INDEX_____________*/
+
+/*__________IMAGENS____________*/
+
+.container-imagem{
+    overflow: auto;
+    display: flex;
+    margin: 50px 0 0 0;
+}
+.pessoasDaOng{
+    float: right;
+}
+.fotoPedroH{
+    float: left;
+    margin-right: 15px;
+    margin-left: 50px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.fotoPedro{
+    float: left;
+    margin-right: 15px;
+    margin-left: 100px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.fotoLucas{
+    float: left;
+    margin-right: 15px;
+    margin-left: 50px;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.turmaDoBem{
+    float: right;
+}
+.roadMap{
+    float: right;
+    margin-right: 15px;
+    margin-left: 50px;
+    width: 20%;
+}
+.imagem img {
+    max-width: 420px;
+    width: 100%;
+}
+.fotocontato{
+    width: 100%;
+    height: 100%;
+
+}
+/*__________IMAGENS____________*/
+
+/*___________SOBRE_O_PROJETO_____________*/
+
+.sobre-projeto {
+    padding: 60px 10%;
+    background-color: #fdfdfd;
+    color: #333;
+}
+.sobre-projeto h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #FEA405;
+    margin-bottom: 10px;
+}
+.sobre-projeto h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.sobre-projeto p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 0 15px 0;
+}
+.sobre-projeto ul {
+    list-style-type: ">";
+    margin: 10px 0 20px 25px;
+}
+.sobre-projeto li {
+    margin: 0 0 8px 0;
+}
+
+/*___________SOBRE_O_PROJETO_____________*/
+
+/*___________FAQ_____________*/
+.faq {
+    background-image: url("img/foto_interrogacao.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+    text-align: center;
+    
+    min-height: calc(100vh - 120px); 
+    padding: 40px;
+}
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(254, 164, 5, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 700px;
+}
+.faq .texto h1 {
+    color: #000;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+.perguntas h3 {
+    margin-top: 15px;
+    color: #333;
+}
+.perguntas p {
+    margin-bottom: 10px;
+    color: #222;
+    line-height: 1.4;
+}
+/*___________FAQ_____________*/
+
+/*___________CONTATO_____________*/
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: calc(100vh - 120px);
+    padding: 40px 20px;
+    background-image: url("img/Atendente.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-color: rgba(254, 164, 5, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;        
+    width: 100%;              
+    margin: 40px auto; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.formulario button {
+    align-self: center;   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #8CBF3F;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.formulario button:hover {
+    background-color: #76a02f;
+}
+/*___________CONTATO_____________*/
