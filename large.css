@@ -1,0 +1,58 @@
+@media (min-width: 992px) and (max-width: 1299px) {
+
+    header {
+        padding: 10px 40px;
+    }
+    main {
+        padding: 50px 40px;
+    }
+
+    .introducao {
+        width: 100%;
+        max-width: 1100px;
+        padding: 40px 30px;
+        margin: 40px auto;
+    }
+
+    
+    .titulo-projeto {
+        font-size: 2rem;
+    }
+
+    .subtitulo-projeto {
+        font-size: 1.15rem;
+    }
+
+    .sobre-projeto p, .pilares-lista li {
+        font-size: 0.95rem;
+    }
+    .conteudo-principal {
+        flex-basis: 55%; 
+    }
+
+    .grafico-introducao {
+        flex-basis: 45%;
+    }
+
+    .container-imagem {
+        max-width: 1100px;
+    }
+
+    .roadMap {
+        width: 35%; 
+        height: auto;
+        border-radius: 10px;
+        flex-shrink: 0;
+    }
+    .roadandtext{
+    margin-top: 50px;
+    display: flex;
+    max-width: 900px;
+    }
+
+    .texto-roadmap {
+        flex-grow: 1;
+        width: 80%;
+        
+    }
+}

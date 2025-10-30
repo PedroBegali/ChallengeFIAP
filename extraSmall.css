@@ -1,0 +1,78 @@
+@media (max-width: 600px) {
+ 
+    header {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 0.9rem;
+    }
+    main {
+        padding: 20px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+    .texto, .imagem {
+        max-width: 100%;
+    }
+    .texto h1 {
+        font-size: 2rem;
+    }
+    .imagem img {
+        margin-top: 20px;
+    }
+
+    .container-imagem {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .container-imagem > div {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+    .container-imagem > div:last-child {
+        width: 100%;
+        max-width: 300px;
+    }
+    .roadMap {
+        width: 50%; 
+        height: auto;
+        border-radius: 10px;
+        
+    }
+    .roadandtext{
+        margin-top: 50px;
+        display: flex;
+        max-width: 400px;
+    }
+
+    .texto-roadmap {
+            flex-grow: 1;
+            width: 80%;
+            
+        }
+    .introducao, .desenvolvimento{
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 30px;
+            margin: 40px auto;
+        }
+
+    .formulario {
+        padding: 20px;
+    }
+
+}

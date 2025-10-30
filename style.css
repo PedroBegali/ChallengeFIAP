@@ -1,181 +1,354 @@
-/*___________GERAL_____________*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*================GERAL========================*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+    display: flex; 
+    flex-direction: column;
+    height: auto;
 }
+
 main {
     padding: 40px;
+    flex-grow: 1; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    width: 100%;
+    box-sizing: border-box;
 }
+
 header {
-    background: #FEA405;
+    background: #d0e7ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 40px 0 40px;
 }
-.nomeOng a{
-    text-decoration: none;
-    color: black;
-}
-.nomeOng {
-    background: #8CBF3F;
-    color: black;
-    padding: 10px 20px;
-    font-size: 22px;
-    font-weight: bold;
-    border-radius: 10px;
-}
+
+
 nav a {
     text-decoration: none;
     margin: 0 15px;
-    color: black;
-    font-weight: bold;
+    color: #007bff;
+    font-weight: 600;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 nav a:hover {
-    text-decoration: underline;
+    color: #0056b3;
+    
 }
+
 footer {
-    background: #8CBF3F;
+    background: #007bff;
+    color: white;
     text-align: center;
-    padding: 20px;
-    font-weight: bold;
-    margin-top: 40px;
-    position: fixed;
-    left: 0;
+    padding: 15px 20px;
+    font-weight: 400;
     width: 100%;
-    bottom: 0;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-top: 0;
 }
-/*___________GERAL_____________*/
+/*================GERAL========================
 
-/*___________INDEX_____________*/
-
+================INDEX========================*/
 .inicio {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 60px 10%;
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .texto {
     max-width: 500px;
 }
 .texto h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-    color: #FEA405;
+    color: #007bff;
     margin: 0 0 25px 0;
+    font-weight: 700;
 }
 .texto p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-top: 15px;
+    color: #555;
 }
-
-/*___________INDEX_____________*/
-
-/*__________IMAGENS____________*/
-
-.container-imagem{
-    overflow: auto;
-    display: flex;
-    margin: 50px 0 0 0;
+.textoComplementar p {
+    max-width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-top: 50px;
 }
-.pessoasDaOng{
-    float: right;
-}
-.fotoPedroH{
-    float: left;
-    margin-right: 15px;
-    margin-left: 50px;
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-.fotoPedro{
-    float: left;
-    margin-right: 15px;
-    margin-left: 100px;
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-.fotoLucas{
-    float: left;
-    margin-right: 15px;
-    margin-left: 50px;
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-.turmaDoBem{
-    float: right;
-}
-.roadMap{
-    float: right;
-    margin-right: 15px;
-    margin-left: 50px;
-    width: 20%;
-}
-.imagem img {
+.imagemIndex img {
     max-width: 420px;
     width: 100%;
+    height: auto;
+    
 }
-.fotocontato{
-    width: 100%;
-    height: 100%;
-
+.criancaDaOng {
+    width: 30%;
+    height: auto;
+    margin-top: 50px;
 }
-/*__________IMAGENS____________*/
-
-/*___________SOBRE_O_PROJETO_____________*/
-
-.sobre-projeto {
-    padding: 60px 10%;
-    background-color: #fdfdfd;
-    color: #333;
+.interacoes {
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
 }
-.sobre-projeto h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: #FEA405;
-    margin-bottom: 10px;
+.interacoes h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #007bff;
 }
-.sobre-projeto h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.quadros {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 250px;
+    justify-content: space-between;
+}
+.icones {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+.quadros h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #007bff;
     margin-bottom: 20px;
+}
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+.button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/*================INDEX=========================
+
+================IMAGENS=========================*/
+
+.logo-container a{
+    text-decoration: none;
+    display: block;
+}
+
+.logo_png {
+height: 100px;
+width: auto;
+object-fit: contain;
+transition: transform 0.3s;
+padding: 2px;
+}
+.logo-container:hover .logo_png {
+    transform: scale(1.05);
+}
+.container-imagem{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+.fotoPedroH, .fotoPedro, .fotoLucas {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pessoasDaOng, .turmaDoBem, .roadMap, .fotoPedroH, .fotoPedro, .fotoLucas {
+    float: none; 
+    margin: auto;
+}
+
+
+.container-imagem {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 50px auto 0 auto;
+    max-width: 800px;
+}
+
+.container-imagem > div {
+    text-align: center;
+    max-width: 250px;
+    width: 50%;
+    box-sizing: border-box; 
+    padding: 0 10px;
+    margin-bottom: 30px; 
+}
+.container-imagem > div:last-child {
+    width: 100%; 
+    max-width: 500px;
+}
+
+
+.container-imagem h3 {
+    color: #343a40;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.container-imagem a {
+    color: #007bff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.container-imagem a:hover {
+    color: #0056b3;
+}
+
+
+.roadMap {
+    width: 300px;
+    height: auto;
+}
+/*================IMAGENS=========================
+
+================SOBRE-O-PROJETO=========================*/
+.introducao {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    width: 1200px;
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    
+    margin: 40px auto;
+}
+.desenvolvimento{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    width: 1200px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    
+    margin: 40px auto;
+}
+.roadandtext{
+    margin-top: 50px;
+    display: flex;
+    gap: 5px;
+}
+.texto-roadmap {
+    flex-grow: 1;
+    max-width: 50%;
+}
+.roadMap {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.conteudo-introducao {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+.conteudo-principal {
+    flex-basis: 60%;
+    padding-right: 20px;
+}
+.titulo-projeto {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.subtitulo-projeto {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: left;
 }
 .sobre-projeto p {
     font-size: 1rem;
-    line-height: 1.7;
-    margin: 0 0 15px 0;
+    line-height: 1.6;
+    margin: 15px 0 20px 0;
+    color: #333;
 }
-.sobre-projeto ul {
-    list-style-type: ">";
-    margin: 10px 0 20px 25px;
+.pilares-lista {
+    list-style: none;
+    margin: 15px 0 30px 0;
+    padding-left: 0;
 }
-.sobre-projeto li {
-    margin: 0 0 8px 0;
+.pilares-lista li {
+    margin: 0 0 10px 0;
+    padding-left: 0;
+    font-size: 1.05rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+.icone-texto {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #007bff;
+}
+.grafico-introducao {
+    flex-basis: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem-ong {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
-/*___________SOBRE_O_PROJETO_____________*/
+/*================SOBRE-O-PROJETO=========================
 
-/*___________FAQ_____________*/
+================FAQ=========================*/
 .faq {
-    background-image: url("img/foto_interrogacao.jpeg");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
+    
+    background-image: none; 
+    background-color: #f8f9fa; 
     
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: center;      
+    align-items: center;
     text-align: center;
     
     min-height: calc(100vh - 120px); 
@@ -185,74 +358,96 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(254, 164, 5, 0.9);
+    background-color: white;
     border-radius: 10px;
     padding: 30px;
     max-width: 700px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 .faq .texto h1 {
-    color: #000;
-    font-size: 2.2rem;
-    margin-bottom: 25px;
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 .perguntas h3 {
     margin-top: 15px;
-    color: #333;
+    color: #007bff;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 .perguntas p {
-    margin-bottom: 10px;
-    color: #222;
-    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
 }
-/*___________FAQ_____________*/
+/*================FAQ=========================
 
-/*___________CONTATO_____________*/
+================CONTATO=========================*/
 .contato {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 80px);
     padding: 40px 20px;
-    background-image: url("img/Atendente.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: none; 
+    background-color: #f8f9fa;
+}
+.contato h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    background-color: rgba(254, 164, 5, 0.9);
-    border-radius: 20px;
-    padding: 30px;
-    max-width: 500px;        
-    width: 100%;              
-    margin: 40px auto; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: white; 
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto; 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.formulario label {
+    font-weight: 600;
+    color: #343a40;
+    margin-top: 5px;
 }
 .formulario input,
 .formulario textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
     font-size: 1rem;
+    transition: border-color 0.3s;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
 .formulario button {
-    align-self: center;   
-    padding: 10px 20px;
+    align-self: center;
+    width: 100%;
+    padding: 12px 20px;
     border: none;
-    border-radius: 10px;
-    background-color: #8CBF3F;
+    border-radius: 50px;
+    background-color: #28a745;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
 .formulario button:hover {
-    background-color: #76a02f;
+    background-color: #1e7e34;
+    transform: translateY(-2px);
 }
-/*___________CONTATO_____________*/
+/*================CONTATO=========================*/

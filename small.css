@@ -1,0 +1,50 @@
+@media (min-width: 601px) and (max-width: 767px) {
+
+    header {
+    flex-direction: row;
+    padding: 10px 20px;
+
+    }
+    nav a {
+    display: initial;
+    margin: 0 10px;
+    }
+    
+    .inicio {
+        padding: 40px 5%;
+    }
+
+    .container-imagem {
+        flex-direction: row;
+    }
+    .container-imagem > div {
+        width: 50%;
+        max-width: 400px;
+    }
+    .container-imagem > div:last-child {
+        width: 100%;
+    }
+    .roadMap {
+        width: 50%; 
+        height: auto;
+        border-radius: 10px;
+        
+    }
+    .roadandtext{
+        margin-top: 50px;
+        display: flex;
+        max-width: 400px;
+    }
+
+    .texto-roadmap {
+        flex-grow: 1;
+        width: 80%;
+        
+    }
+    .introducao, .desenvolvimento{
+        width: 100%;
+        max-width: 500px;
+        padding: 40px 30px;
+        margin: 40px auto;
+    }
+}
